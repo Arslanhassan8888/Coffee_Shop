@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en-gb">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mug and Ningle</title>
+    <link rel="icon" type="image/png" sizes="48x48" href="/images/favicon.png">
+    <!--this is the little image which appear next to the URL-->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <!-- Header -->
+        <header class="header"> <!--class to style teh header block-->
+            <img src="/images/logo.png" alt="logo"> <!--the logo which appear on the top of every page-->
+            <nav id="navbar" class="nav"> <!--id="navabr" is reffereing to the quick link in side bar-->
+                <!--navbar is used as navigation bar to move from page to another of the website-->
+                <a href="index.html" class="current">Home</a>
+                <!-- class current is used to style single   button page-->
+                <a href="about.html">About Us</a>
+                <a href="products.html">Products</a>
+                <a href="events.html">Events</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+        </header>
+
+        <!-- Main Content -->
+        <main class="main"> <!--the main element is sematic HTML5 tag contain the primary content of the page-->
+            <section class="hero"> <!-- is often used to highlight the website's primary message or welcome users.-->
+                <h1>Welcome to Mug and Mingle Coffe Shop</h1>
+                <p>The place where the perfect brew and passion come together, we invite you to explore our thoughtfully
+                    curated selection of specialty coffee.
+                    Join a vibrant community of coffee enthusiasts who celebrate the art of every sip and the warmth of
+                    every moment shared!
+                </p>
+            </section>
+            <section class="content">
+                <!--This section contains articles about the coffee shop, including details about their coffee and promotions.>-->
+                <article><!-- Each <article> element represents an independent piece of content that can be distributed or displayed individually.
+                    -->
+                    <section>
+                        <h2>The Secret Behind our Perfect Coffee</h2>
+                        <p>Crafted with 100% organic Arabica beans, our coffee stands out for its rich flavor and aroma.
+                            Every cup
+                            is lovingly hand-brewed by skilled baristas, ensuring a perfect balance of taste and texture
+                            that delights
+                            every coffee enthusiast. From the finest beans to expert craftsmanship, every detail is
+                            designed to make
+                            your coffee moments extraordinary.</p>
+                        <figure>
+                            <!--By wrapping the image inside a <figure> and pairing it with a <figcaption>, you tell browsers, search engines, and assistive technologies 
+                                that the image and its caption are related. This improves accessibility and helps convey the context of the image better.-->
+                            <img src="/Images/coffee1.jpg" alt="Coffee picture">
+                            <figcaption>A Handcrafted Masterpiece!</figcaption>
+                        </figure>
+                    </section>
+                </article>
+                <article>
+                    <section id="special-offers">
+                        <h2>Special Offers for Christmas and New Year!</h2>
+                        <p>"Buy One Get One Free on Your Favorite Coffee!" Treat yourself and a friend to a perfect brew
+                            with our
+                            special BOGO offer, available for a limited time only. Whether it's a morning pick-me-up, an
+                            afternoon
+                            delight, or an evening treat, enjoy the warmth and flavor of your favorite coffee, now
+                            shared with someone special.
+                        </p>
+                        <figure>
+                            <img src="/Images/coffee2.jpg" alt="Coffe twice">
+                            <figcaption>Grab one, gift one!</figcaption>
+                        </figure>
+                    </section>
+                </article>
+
+            </section> <!-- "id" Assigns a unique identifier for linking or styling.-->
+            <!--"class" Applies CSS classes for layout and style.-->
+            <section id="coffee-home-section" class="content shaped coffee-home-block">
+                <article>
+                    <h2>Where Every Cup Feels Like Home</h2>
+                    <p>
+                        <img src="/Images/coffee3.jpeg" alt="Coffee round picture" class="coffee-home-image">
+                        We're excited to welcome you to our cozy haven. At Mug and Mingle, we do more than just brew
+                        coffee; we create an experience that feels
+                        like home. Our space is designed for every occasion—whether you are grabbing a quick cup to go,
+                        catching up with friends, or finding
+                        a quiet nook to dive into your work. Every cup of coffee we serve is made with love and
+                        precision, from bold espressos to creamy
+                        cappuccinos and everything in between. Pair your coffee with our irresistible selection of
+                        pastries, baked fresh every morning to
+                        complement every sip. Browse our offerings, soak in the ambiance, and experience the joy of
+                        being part of our coffee-loving community.
+                        We can't wait to see you and share a perfect brew!
+                    </p>
+                </article>
+            </section>
+        </main>
+
+        <!-- Sidebar -->
+        <!--This semantic HTML5 tag is used to contain supplementary content related to the main content of the webpage.It is commonly used for sidebars, advertisements, or widgets.
+          My sidebar contain quick link to move around the main section of the website and below anon stop video that can work as advertisment-->
+        <aside class="sidebar">
+            <section class="quick-links">
+                <h3>Quick Links</h3>
+                <ul><!-- a list of quick link-->
+                    <li><a href="#navbar">Top</a></li>
+                    <li><a href="#special-offers">Special Offer</a></li>
+                    <li><a href="#footer">Bottom</a></li>
+                </ul>
+            </section>
+            <section class="video-section">
+                <h3>Discover More</h3>
+                <iframe src="https://www.youtube.com/embed/0jIeCAOkgcQ?autoplay=1&mute=1&loop=1&playlist=0jIeCAOkgcQ"
+                    title="YouTube video player" frameborder="0" allow="autoplay; encrypted-media; picture-in-picture"
+                    allowfullscreen>
+                </iframe>
+            </section>
+        </aside>
+
+        <!-- Footer -->
+        <!--The <footer> tag is a semantic HTML5 element representing the footer content, typically placed at the bottom of a webpage.-->
+        <footer id="footer" class="footer"> <!--id="Footer" is used to reffer to quick link in the side bar-->
+            <p>&copy; 2024 Mug and Mingle. All rights reserved.</p> <!--&copy;: Represents the copyright symbol.-->
+        </footer>
+    </div>
+</body>
+
+</html>
+<!--<section>:The website has distinct thematic blocks (welcome message, coffee details, promotions, ambiance).
+<section> groups related content to maintain clarity and focus. <article>:The website showcases standalone content, like:Coffee details.Promotions.Ambiance description.
+Each piece of content (an article) is meaningful on its own and can be shared or reused independently.
+Why Combine Them:-->
